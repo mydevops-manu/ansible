@@ -1,4 +1,4 @@
-#taking variables form variables.yaml external file
+#taking variables form variables.yaml external file using vars_files
 - name: variables from yaml file
   hosts: localhost
   vars_files:
