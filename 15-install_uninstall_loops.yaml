@@ -1,0 +1,12 @@
+# install and uninstalling using loop
+- name: install and uninstall using loop
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: install and uninstall
+    ansible.builtin.package:
+    name: "{{item.name}}"
+    state: "{{item.state}}"
+    loop:
+    - {name: 'git', state: 'present'} # present means install
+    - {name: 'mysql', state: 'absent'} # absent means uninstall
