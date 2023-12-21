@@ -5,4 +5,5 @@
   - name: taking variables from args
     ansible.builtin.debug:
       msg: "Hi I am {{me}}. you can call me {{nick}}" 
-      # you can receive "me,nick" variables values from the command line
+      # you can receive "me,nick" variables values from the command line 
+      # by adding -e "me"="manoj" -e "nick"="manu" 
