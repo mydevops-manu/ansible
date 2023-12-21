@@ -1,5 +1,6 @@
 # simple install using loop
 - name: loops for simple install
+  become: yes
   hosts: localhost
   tasks:
   - name: install packages
