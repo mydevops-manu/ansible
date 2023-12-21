@@ -1,0 +1,11 @@
+#adding variables in playbook
+- name: adding variables
+  hosts: localhost
+  vars:
+    wish: "Hello"
+    me: "Manoj"
+    nick: "Manu"
+  task:
+  - name: print variables here
+    ansible.builtin.debug:
+      msg: "{{wish}} everyone. My name is {{me}}. You can call me {{nick}}"
