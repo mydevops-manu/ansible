@@ -1,0 +1,11 @@
+# implementing loops
+- name: loops
+  hosts: localhost
+  tasks:
+  - name: looping 
+    ansible.builtin.debug:
+      msg: "displaying {{item}} in loop" # item is default keyword
+    loop:
+    - one
+    - two
+    - three
