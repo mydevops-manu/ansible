@@ -5,7 +5,7 @@
     wish: "Hello"
     me: "Manoj"
     nick: "Manu"
-  task:
+  tasks:
   - name: print variables here
     ansible.builtin.debug:
       msg: "{{wish}} everyone. My name is {{me}}. You can call me {{nick}}"
