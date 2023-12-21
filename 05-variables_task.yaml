@@ -1,0 +1,13 @@
+# adding variables inside tasks now
+- name: vars in task
+  hosts: localhost
+  vars:
+    wish: "Hello"
+    me: "Manoj"
+    nick: "Manu"
+  tasks:
+  - name: updating var values here
+    vars: # variable at task level, replaces with new value
+      wish: "Hi"
+    ansible.bulitin.debug:
+      msg: "msg: "{{wish}} everyone. My name is {{me}}. You can call me {{nick}}""
