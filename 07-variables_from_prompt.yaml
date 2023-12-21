@@ -1,0 +1,14 @@
+# getting vars from prompt i.e., form the user using vars_prompt
+- name:
+  hosts: localhost
+  vars_prompt:
+  - name : USERNAME
+    prompt: "Enter your user name"
+    private: false # false :: user can see what they are entering
+  - name: PASSWORD
+    prompt: "Enter your password"
+    private: true # true :: user can't see what they are entering
+  tasks:
+  - name: using the vars from user
+    ansible.builtin.debug:
+      msg: "username is {{USERNAME}} , password is {{PASSWORD}}"
