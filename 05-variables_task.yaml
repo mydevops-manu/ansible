@@ -1,4 +1,4 @@
-# adding variables inside tasks now
+# adding variables inside tasks now using vars
 - name: vars in task
   hosts: localhost
   vars:
