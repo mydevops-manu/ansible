@@ -1,0 +1,8 @@
+# getting variables form args i.e., form command line
+- name: getting variables from args
+  hosts: localhost
+  tasks:
+  - name: taking variables from args
+    ansible.builtin.debug:
+      msg: "Hi I am {{me}}. you can call me {{nick}}" 
+      # you can receive "me,nick" variables values from the command line
