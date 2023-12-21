@@ -9,5 +9,5 @@
   - name: updating var values here
     vars: # variable at task level, replaces with new value
       wish: "Hi"
-    ansible.bulitin.debug:
+    ansible.builtin.debug:
       msg: "{{wish}} everyone. My name is {{me}}. You can call me {{nick}}"
