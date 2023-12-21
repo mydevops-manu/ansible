@@ -4,4 +4,4 @@
   tasks:
   - name: using variables from inventory
     ansible.builtin.debug:
-      msg "Hi I am {{me}}. you can call me {{nick}}"
+      msg: "Hi I am {{me}}. you can call me {{nick}}"
