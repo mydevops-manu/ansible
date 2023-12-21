@@ -1,0 +1,7 @@
+# getting values form inventory
+- name: taking values from inventory
+  hosts: localhost
+  tasks:
+  - name: using variables from inventory
+    ansible.builtin.debug:
+      msg "Hi I am {{me}}. you can call me {{nick}}"
