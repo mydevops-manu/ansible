@@ -1,0 +1,9 @@
+#taking variables form variables.yaml external file
+- name: variables from yaml file
+  hosts: localhost
+  vars_files:
+    - variables.yaml
+  tasks:
+  - name: fetching variables form file
+    ansible.built.debug:
+     msg: "Hi {{me}}, {{wish}} Happy to see you."
